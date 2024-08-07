@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit {
 
 
   //heroes = HEROES;
-  selectedHero?: Hero;
+ // selectedHero?: Hero;
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService,private messageService: MessageService) { }
@@ -34,9 +34,11 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
+  /*
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
   }
+  */
 
 }
